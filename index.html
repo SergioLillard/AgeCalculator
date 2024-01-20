@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <form>
+          <fieldset>
+            <label for="day" id="day-label">DAY</label>
+            <input type="number" id="day" name="day" placeholder="DD" />
+            <div class="alert-box" id="day-alert-box"></div>
+          </fieldset>
+
+          <fieldset>
+            <label for="month" id="month-label">MONTH</label>
+            <input type="number" id="month" name="month" placeholder="MM" />
+            <div class="alert-box" id="month-alert-box"></div>
+          </fieldset>
+
+          <fieldset>
+            <label for="year" id="year-label">YEAR</label>
+            <input type="number" id="year" name="year" placeholder="YYYY " />
+            <div class="alert-box" id="year-alert-box"></div>
+          </fieldset>
+        </form>
+
+        <div id="image-box">
+          <div id="line">
+            <hr />
+          </div>
+          <div id="image">
+            <img src="./assets/images/icon-arrow.svg" alt="" />
+          </div>
+        </div>
+
+        <div id="age">
+          <p><strong id="result-years">--</strong> years</p>
+          <p><strong id="result-months">--</strong> months</p>
+          <p><strong id="result-days">--</strong> days</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/SergioLillard" target="_blank"
+          >Sergio Lillard</a
+        >.
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
