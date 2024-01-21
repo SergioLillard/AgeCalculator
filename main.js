@@ -1,5 +1,6 @@
 // INPUTS:
 const inputs = document.querySelectorAll("input");
+
 const dayInput = document.getElementById("day");
 const monthInput = document.getElementById("month");
 const yearInput = document.getElementById("year");
@@ -31,12 +32,12 @@ const button = document.getElementById("image");
 button.addEventListener("click", showAge);
 
 function showAge() {
-  // GETS INPUT VALUES (BIRTHDAY):
+  // GET INPUT VALUES (DATE OF BIRTH):
   let birthDay = dayInput.value;
   let birthMonth = monthInput.value;
   let birthYear = yearInput.value;
 
-  // GETS THE CURRENT DATE:
+  // GET THE CURRENT DATE:
   let currentDate = new Date();
   let currentDay = currentDate.getDate();
   let currentMonth = currentDate.getMonth() + 1;
@@ -210,12 +211,12 @@ function showAge() {
 }
 
 function math() {
-  // GETS INPUT VALUES (BIRTHDAY):
+  // GET INPUT VALUES (DATE OF BIRTH):
   let birthDay = dayInput.value;
   let birthMonth = monthInput.value;
   let birthYear = yearInput.value;
 
-  // GETS THE CURRENT DATE:
+  // GET THE CURRENT DATE:
   let currentDate = new Date();
   let currentDay = currentDate.getDate();
   let currentMonth = currentDate.getMonth() + 1;
@@ -241,11 +242,9 @@ function math() {
   let ageMonths = currentMonth - birthMonth;
   let ageYears = currentYear - birthYear;
 
-  console.log(ageDays, ageMonths, ageYears);
+  console.log(ageYears, ageMonths, ageDays);
 
   resultYears.textContent = ageYears;
   resultMonths.textContent = ageMonths;
   resultDays.textContent = ageDays;
-
-  console.log(d, m, y);
 }
